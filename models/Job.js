@@ -39,10 +39,6 @@ const JobSchema = sequelize.define(
     createdBy: {
       type: DataTypes.STRING,
       allowNull: false,
-      references: {
-        model: 'User',
-        key: 'id',
-      },
       validate: {
         notNull: {
           msg: 'Please provide user',
@@ -54,6 +50,8 @@ const JobSchema = sequelize.define(
     timestamps: true,
   }
 )
+
+
 
 JobSchema.sync()
 
