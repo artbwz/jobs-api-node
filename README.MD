@@ -91,3 +91,7 @@ const jsonData = pm.response.json()
 pm.globals.set("acessToken", jsonData.token);
 
 Then, go to Authorization, select Bearer Token, and use {{acessToken}}
+
+
+Project is based in this video of Coding addict:
+https://www.youtube.com/watch?v=rltfdjcXjmk
