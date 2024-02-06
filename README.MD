@@ -69,6 +69,17 @@ Body for login:
 }
 ```
 
+### Creating / Updating Job
+
+Body for creating job:
+```
+{
+  "company":"company name",
+  "position":"position",
+  "status":"['interview', 'declined' or 'pending']"
+}
+```
+
 ### Postman Setup
 
 For testing, use global variables for the tokens
